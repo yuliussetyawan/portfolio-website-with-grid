@@ -329,6 +329,16 @@ Navbar
     color: var(--primary-500);
   }
 }
+/* fixed navbar */
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--white);
+  z-index: 5;
+  box-shadow: var(--shadow-2);
+}
 
 /*
 =============== 
@@ -396,4 +406,9 @@ Sidebar
 }
 .close-btn:hover {
   color: #e66b6b;
+}
+
+.hero {
+  min-height: 130vh;
+  background: red;
 }
