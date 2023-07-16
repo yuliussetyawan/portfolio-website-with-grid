@@ -408,11 +408,6 @@ Sidebar
   color: #e66b6b;
 }
 
-.hero {
-  min-height: 130vh;
-  background: red;
-}
-
 /*
 =============== 
 Hero
@@ -467,8 +462,8 @@ Hero
 .hero-photo {
   max-width: 25rem;
   max-height: 30rem;
-  -o-object-fit: cover;
   object-fit: cover;
   border-radius: var(--radius);
+  /* frame should behind the photo  */
   position: relative;
 }
