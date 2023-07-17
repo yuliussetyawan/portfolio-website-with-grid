@@ -434,7 +434,7 @@ Sidebar
   background: transparent;
   border-color: transparent;
   color: #bb2525;
-  curosr: pointer;
+  cursor: pointer;
   transition: var(--transition);
 }
 .close-btn:hover {
@@ -508,7 +508,7 @@ About
   gap: 3rem 2rem;
 }
 .about-img {
-  justify-self: left;
+  justify-self: center;
 }
 .about-info p {
   text-align: justify;
@@ -527,5 +527,56 @@ About
   }
   .about-info {
     align-self: center;
+  }
+}
+
+/*
+=============== 
+Services
+===============
+*/
+.services {
+  background: var(--grey-200);
+}
+.service {
+  text-align: center;
+  background: var(--backgroundColor);
+  padding: 3rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: var(--borderRadius);
+  transition: var(--transition);
+}
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.service .underline {
+  width: 3rem;
+  height: 0.12rem;
+  transition: var(--transition);
+}
+.service p {
+  transition: var(--transition);
+}
+.service:hover {
+  background: var(--primary-500);
+  color: var(--white);
+}
+.service:hover p {
+  color: var(--white);
+}
+.service:hover .underline {
+  background: var(--white);
+}
+@media screen and (min-width: 676px){
+  .services-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+@media screen and (min-width: 992px){
+  .services-center {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
