@@ -182,7 +182,6 @@ img:not(.nav-logo) {
 }
 
 /* form */
-
 .form {
   width: 90vw;
   max-width: var(--fixed-width);
@@ -276,7 +275,6 @@ img:not(.nav-logo) {
   text-align: center;
 }
 @media screen and (min-width: 992px) {
-  .hero-img::before,
   .about-img::before {
     content: "";
     position: absolute;
@@ -284,8 +282,8 @@ img:not(.nav-logo) {
     height: 100%;
     border: 0.25rem solid var(--primary-800);
     top: 2rem;
-    right: -2rem;
-    border-radius: var(--radius);
+    /* right: -2rem; */
+    border-radius: var(--borderRadius);
   }
 }
 
@@ -308,6 +306,18 @@ Navbar
   width: 100%;
   margin: 0 auto;
   max-width: var(--max-width);
+}
+.nav-logo {
+  font-size: 1.75rem;
+  color: var(--grey-500);
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+.nav-logo span {
+  font-weight: 600;
+  color: var(--grey-600);
 }
 .nav-header {
   display: grid;
@@ -471,11 +481,11 @@ Hero
   }
   /* the :before element is added to global classes */
 }
-.hero-photo {
+.photo {
   max-width: 25rem;
   max-height: 30rem;
   object-fit: cover;
-  border-radius: var(--radius);
+  border-radius: var(--borderRadius);
   /* frame should behind the photo  */
   position: relative;
 }
