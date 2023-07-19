@@ -658,10 +658,11 @@ Projects
       "a b b"
       "a c d";
   }
-  /* rewrite project-img from 15rem; */
+  /* rewrite project-img height from 15rem; */
   .project-img {
     height: 100%;
   }
+  /* because the project is wrapped by <a> tag, need to stretch */
   .project{
     height: 100%;
   }
@@ -677,4 +678,60 @@ Projects
   .project-4 {
     grid-area: d;
   }
+}
+
+/*
+=============== 
+Connect
+===============
+*/
+.connect{
+  min-height: 40vh;
+  position: relative;
+  padding: 10rem 0 5rem 0;
+  margin: 5rem 0;
+  display: grid;
+  place-items: center;
+  clip-path: polygon(50% 0%, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
+}
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+/* create a whiter overlay over video img */
+.connect::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--white);
+  opacity: 0.7;
+  z-index: -1;
+}
+.video-banner .section-title {
+  margin-bottom: 2rem;
+}
+.video-text{
+  max-width: 30rem;
+}
+.video-banner {
+  background: var(--primary-100);
+  padding: 3rem 5rem 10rem;
+  text-align: center;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
 }
