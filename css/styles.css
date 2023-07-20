@@ -52,7 +52,7 @@ Variables
   --textColor: var(--grey-900);
   --borderRadius: 0.25rem;
   --letterSpacing: 1px;
-  --transition:all 0.3s linear;
+  --transition: all 0.3s linear;
   --max-width: 1120px;
   --fixed-width: 600px;
 
@@ -663,7 +663,7 @@ Projects
     height: 100%;
   }
   /* because the project is wrapped by <a> tag, need to stretch */
-  .project{
+  .project {
     height: 100%;
   }
   .project-1 {
@@ -685,7 +685,7 @@ Projects
 Connect
 ===============
 */
-.connect{
+.connect {
   min-height: 40vh;
   position: relative;
   padding: 10rem 0 5rem 0;
@@ -718,7 +718,7 @@ Connect
 .video-banner .section-title {
   margin-bottom: 2rem;
 }
-.video-text{
+.video-text {
   max-width: 30rem;
 }
 .video-banner {
@@ -734,4 +734,79 @@ Connect
     50% 75%,
     0% 75%
   );
+}
+
+/*
+=============== 
+Skills
+===============
+*/
+.skills {
+  background: var(--grey-200);
+}
+.skills h3 {
+  font-size: 1.25rem;
+  margin: 1.5rem 0;
+  letter-spacing: var(--letterSpacing);
+  font-weight: semibold;
+}
+.skill {
+  margin-bottom: 2rem;
+}
+.skill p {
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  color: var(--primary-400);
+}
+.skill-container {
+  position: relative;
+  height: 1rem;
+  width: 100%;
+  background: var(--white);
+  border-radius: var(--borderRadius);
+}
+.skill-value {
+  position: absolute;
+  background: var(--primary-300);
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: var(--borderRadius);
+}
+.value-80{
+  width: 80%;
+}
+.value-70{
+  width: 70%;
+}
+.value-60{
+  width: 60%;
+}
+.value-50{
+  width: 50%;
+}
+.skill-text {
+  position: absolute;
+  top: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.skill-text-80{
+  left: 80%;
+}
+.skill-text-70{
+  left: 70%;
+}
+.skill-text-60{
+  left: 60%;
+}
+.skill-text-50{
+  left: 50%;
+}
+@media screen and (min-width: 768px){
+  .skills-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
 }
