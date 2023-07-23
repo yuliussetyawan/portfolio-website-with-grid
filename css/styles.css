@@ -73,6 +73,8 @@ Global Classes
 ::after,
 ::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* typescale */
@@ -975,4 +977,23 @@ Footer
 .footer p {
   font-size: 1.25rem;
   text-transform: capitalize;
+}
+
+/*
+=============== 
+Single Page
+===============
+*/
+.single-page {
+  background: var(--primary-100);
+}
+.page-info {
+ max-width: 700px;
+ text-align: justify;
+}
+.page-info a {
+  transition: var(--transition);
+}
+.page-info a:hover {
+  color: var(--primary-900);
 }
