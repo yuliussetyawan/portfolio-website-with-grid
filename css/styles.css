@@ -775,16 +775,16 @@ Skills
   left: 0;
   border-radius: var(--borderRadius);
 }
-.value-80{
+.value-80 {
   width: 80%;
 }
-.value-70{
+.value-70 {
   width: 70%;
 }
-.value-60{
+.value-60 {
   width: 60%;
 }
-.value-50{
+.value-50 {
   width: 50%;
 }
 .skill-text {
@@ -793,19 +793,19 @@ Skills
   left: 50%;
   transform: translateX(-50%);
 }
-.skill-text-80{
+.skill-text-80 {
   left: 80%;
 }
-.skill-text-70{
+.skill-text-70 {
   left: 70%;
 }
-.skill-text-60{
+.skill-text-60 {
   left: 60%;
 }
-.skill-text-50{
+.skill-text-50 {
   left: 50%;
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .skills-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -832,16 +832,15 @@ Timeline
   /* margin-bottom for p is 1.25rem declared in global classes */
   margin-bottom: 0;
 }
-.timeline-item:nth-child(even){
+.timeline-item:nth-child(even) {
   border-left: 2px dashed var(--primary-500);
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
   padding-right: 0;
   /* customize top right corner radius to be rounded */
   margin-right: 2rem;
-  
 }
-.timeline-item:nth-child(odd){
+.timeline-item:nth-child(odd) {
   border-right: 2px dashed var(--primary-500);
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
@@ -849,11 +848,11 @@ Timeline
   /* customize top right corner radius to be rounded */
   margin-left: 2rem;
 }
-.timeline-item:first-child{
+.timeline-item:first-child {
   border-top: 0;
   border-top-right-radius: 0;
 }
-.timeline-item:last-child{
+.timeline-item:last-child {
   border-bottom-left-radius: 0;
 }
 .number {
@@ -867,9 +866,9 @@ Timeline
   place-items: center;
   color: var(--primary-100);
   font-weight: bold;
-  background: var(--primary-500)
+  background: var(--primary-500);
 }
-.timeline-item:nth-child(odd) .number{
+.timeline-item:nth-child(odd) .number {
   right: 0;
   transform: translate(50%, -50%);
 }
@@ -901,7 +900,7 @@ Blog
   visibility: visible;
   transition: all 1s linear;
 }
-.card-front{
+.card-front {
   background: var(--white);
 }
 .card-back {
@@ -917,7 +916,7 @@ Blog
   transform: rotateY(0);
 }
 /* rest of the styles */
-.card-info{
+.card-info {
   padding: 1rem 1.5rem;
 }
 .card-front img {
@@ -939,7 +938,7 @@ Blog
 }
 .card-footer p {
   margin-bottom: 0;
-  text-transform: uupercase;
+  text-transform: upercase;
   justify-self: end;
   color: var(--primary-500);
   font-size: 0.85rem;
@@ -965,10 +964,10 @@ Footer
 .footer .social-icons {
   margin-bottom: 2rem;
 }
-.footer .social-icon{
+.footer .social-icon {
   color: var(--primary-500);
 }
-.footer .social-icon{
+.footer .social-icon {
   color: var(--primary-500);
 }
 .footer .social-icon:hover {
@@ -988,12 +987,79 @@ Single Page
   background: var(--primary-100);
 }
 .page-info {
- max-width: 700px;
- text-align: justify;
+  max-width: 700px;
+  text-align: justify;
 }
 .page-info a {
   transition: var(--transition);
 }
 .page-info a:hover {
   color: var(--primary-900);
+}
+
+/*
+=============== 
+Project Page
+===============
+*/
+.projects-hero {
+  background-color: var(--primary-100);
+  height: 40vh;
+  display: grid;
+  place-items: center;
+}
+.projects-hero .section-title {
+  margin-bottom: 0;
+}
+.single-project {
+  background: var(--primary-100);
+  border-radius: var(--borderRadius);
+}
+.project-container img {
+  border-top-left-radius: var(--borderRadius);
+  border-top-right-radius: var(--borderRadius);
+}
+.project-container {
+  position: relative;
+}
+.project-icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 2rem;
+  border-radius: 50%;
+  background: var(--primary-500);
+  width: 4rem;
+  height: 4rem;
+  display: grid;
+  place-items: center;
+  transform: translate(-50%, 50%);
+  color: var(--primary-100);
+  border: 0.375rem solid var(--primary-100);
+}
+.project-details {
+  padding: 2rem 1.5rem;
+}
+.project-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  color: var(--primary-500);
+}
+.project-footer a {
+  text-transform: capitalize;
+  justify-self: end;
+  transition: var(--transition);
+  background: var(--primary-200);
+  padding: 0 1rem;
+  border-radius: var(--borderRadius);
+}
+.project-footer a:hover {
+  color: var(--primary-100);
+  background: var(--primary-300);
+}
+.projects-page-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  
 }
