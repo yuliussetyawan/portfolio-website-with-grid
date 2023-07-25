@@ -189,9 +189,12 @@ img:not(.nav-logo) {
   max-width: var(--fixed-width);
   background: var(--white);
   border-radius: var(--borderRadius);
-  box-shadow: var(--shadow-2);
+  box-shadow: var(--shadow-4);
   padding: 2rem 2.5rem;
-  margin: 3rem auto;
+  margin: 2rem auto;
+}
+.form h4 {
+  text-align: center;
 }
 .form-label {
   display: block;
@@ -1061,5 +1064,18 @@ Project Page
 .projects-page-center {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
-  
+}
+
+/*
+=============== 
+Contact Page
+===============
+*/
+.contact-page {
+  background: var(--primary-100);
+}
+.contact-page p {
+  max-width: 35rem;
+  margin: 0 auto;
+  text-align: center;
 }

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yulius || Contact</title>
+  <!-- add icon link -->
+  <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="nav" id="nav">
+    <div class="nav-center">
+      <!-- nav header -->
+      <div class="nav-header">
+        <!-- <img src="./images/logo2.svg" alt="logo" class="nav-logo"> -->
+        <h4 class="nav-logo">Yulius <span>Setyawan</span></h4>
+        <button class="nav-btn" id="nav-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <!-- nav links -->
+      <ul class="nav-links">
+        <li><a href="./index.html">home</a></li>
+        <li><a href="./about.html">about</a></li>
+        <li><a href="./project.html">project</a></li>
+        <li><a href="./contact.html">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- end of navbar -->
+
+  <!-- sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div>
+      <button class="close-btn" id="close-btn"><i class="fas fa-times"></i></button>
+      <!-- nav links -->
+      <ul class="sidebar-links">
+        <li><a href="./index.html">home</a></li>
+        <li><a href="./about.html">about</a></li>
+        <li><a href="./project.html">project</a></li>
+        <li><a href="./contact.html">contact</a></li>
+      </ul>
+      <!-- social icons -->
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.linkedin.com/in/yulius17/" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/yuliussetyawan" class="social-icon" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/yulius.setyawan.35/" class="social-icon" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/yuliussetyawan" class="social-icon" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/ylssty17" class="social-icon" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <!-- end of sidebar -->
+
+  <section class="section contact-page">
+    <!-- section title -->
+    <div class="section-title">
+      <h1>contact</h1>
+      <div class="underline"></div>
+    </div>
+    <!--end of section title -->
+    <div class="section-center page-info">
+      <p>If you have any questions about my work, or if you're interested in working together, please don't hesitate to fill the contact form below, thank you.</p>
+      <!-- contact form -->
+      <form action="https://formspree.io/f/mwkjzkqq" method="POST" class="form">
+        <div class="form-row">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" id="name" class="form-input" placeholder="John Doe" name="name" required />
+        </div>
+        <div class="form-row">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" class="form-input" placeholder="johndoe@mail.com" name="email" />
+        </div>
+        <div class="form-row">
+          <label for="textarea" class="form-label">Message</label>
+          <textarea class="form-textarea" placeholder="Hi, I want to collab..." name="message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-block">submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer">
+    <!-- social icons -->
+    <!-- social icons -->
+    <ul class="social-icons hero-icons">
+      <li>
+        <a href="https://www.linkedin.com/in/yulius17/" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/yuliussetyawan" class="social-icon" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/yulius.setyawan.35/" class="social-icon" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com/yuliussetyawan" class="social-icon" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/ylssty17" class="social-icon" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    </ul>
+    <p>&copy; <span id="date"></span> yulius setyawan. all rights reserved</p>
+  </footer>
+  <!-- end of footer -->
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
