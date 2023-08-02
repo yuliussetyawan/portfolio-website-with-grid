@@ -656,6 +656,14 @@ Projects
   opacity: 1;
   transform: scale(0.8);
 }
+.projects-btn {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+  width: 12rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media screen and (min-width: 676px) {
   .projects-center {
     display: grid;
@@ -666,6 +674,9 @@ Projects
 @media screen and (min-width: 992px) {
   .projects-center {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .projects-btn {
+    margin-top: 2rem;
   }
 }
 @media screen and (min-width: 1170px) {
