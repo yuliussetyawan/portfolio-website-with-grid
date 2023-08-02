@@ -80,6 +80,7 @@ Global Classes
 /* typescale */
 html {
   font-size: 100%;
+  scroll-behavior: smooth;
 } /*16px*/
 body {
   background: var(--backgroundColor);
@@ -233,6 +234,18 @@ img:not(.nav-logo) {
 @keyframes spinner {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
@@ -979,6 +992,26 @@ Footer
 .footer p {
   font-size: 1.25rem;
   text-transform: capitalize;
+}
+.top-link {
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background: var(--primary-500);
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: var(--borderRadius);
+  color: var(--white);
+  animation: bounce 2s ease-in-out infinite;
+  visibility: hidden;
+  z-index: -100;
+}
+.show-link {
+  visibility: visible;
+  z-index: 100;
 }
 
 /*

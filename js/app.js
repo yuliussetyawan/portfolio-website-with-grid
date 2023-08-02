@@ -3,12 +3,18 @@ const navBtn = document.querySelector("#nav-btn");
 const closeBtn = document.querySelector("#close-btn");
 const sidebar = document.querySelector("#sidebar");
 const date = document.querySelector("#date");
+const topLink = document.querySelector('.top-link');
 // add fixed class to navbar
 window.addEventListener("scroll", function () {
   if (window.pageYOffset > 80) {
     navbar.classList.add("navbar-fixed");
   } else {
     navbar.classList.remove("navbar-fixed");
+  }
+  if (window.pageYOffset > 500) {
+    topLink.classList.add("show-link");
+  } else {
+    topLink.classList.remove("show-link");
   }
 });
 // show sidebar
@@ -27,3 +33,4 @@ window.onbeforeunload = () => {
     form.reset();
   }
 };
+
