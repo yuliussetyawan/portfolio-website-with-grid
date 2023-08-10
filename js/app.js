@@ -4,6 +4,7 @@ const closeBtn = document.querySelector("#close-btn");
 const sidebar = document.querySelector("#sidebar");
 const date = document.querySelector("#date");
 const topLink = document.querySelector('.top-link');
+const allSidebarLinks = document.querySelectorAll('.sidebar-links > *')
 // add fixed class to navbar
 window.addEventListener("scroll", function () {
   if (window.pageYOffset > 80) {
@@ -24,6 +25,13 @@ navBtn.addEventListener("click", function () {
 closeBtn.addEventListener("click", function () {
   sidebar.classList.remove("show-sidebar");
 });
+// hide sidebar after click
+allSidebarLinks.forEach(function(link){
+  link.addEventListener('click', function(e){
+    sidebar.classList.remove('show-sidebar');
+  })
+})
+
 // set year
 date.innerHTML = new Date().getFullYear();
 
