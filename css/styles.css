@@ -926,6 +926,7 @@ Blog
   border-radius: var(--borderRadius);
   visibility: visible;
   transition: all 1s linear;
+  overflow: hidden;
 }
 .card-front {
   background: var(--white);
