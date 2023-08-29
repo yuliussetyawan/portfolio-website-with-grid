@@ -1062,10 +1062,13 @@ Project Page
 .single-project {
   background: var(--primary-100);
   border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-3);
 }
 .project-container img {
   border-top-left-radius: var(--borderRadius);
   border-top-right-radius: var(--borderRadius);
+  height: 15rem;
+  object-fit: cover;
 }
 .project-container {
   position: relative;
@@ -1084,6 +1087,10 @@ Project Page
   transform: translate(-50%, 50%);
   color: var(--primary-100);
   border: 0.375rem solid var(--primary-100);
+}
+.project-icon:hover{
+  background: var(--primary-300);
+  color: var(--primary-800);
 }
 .project-details {
   padding: 2rem 1.5rem;
@@ -1108,6 +1115,7 @@ Project Page
 }
 .projects-page-center {
   display: grid;
+  gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
 }
 
